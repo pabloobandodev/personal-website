@@ -71,7 +71,7 @@ const Home: React.FC<{ author: Author }> = ({ author }) => {
         <section>
           <h2 css={text}>Hey ✌️</h2>
           <p css={text}>
-            My name is <strong>{author.name}</strong>, {author.description}
+            My name is <strong>{author?.name}</strong>, {author?.description}
           </p>
           <h3>Another cool things that I enjoy</h3>
           <ul css={list}>

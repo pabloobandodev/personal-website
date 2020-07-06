@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
     <footer css={container}>
       <p css={hashtag}>#blacklivesmatter ✊🏾</p>
       <div css={containerIcons}>
-        {socialMedia.map(({ name, url, icon }) => (
+        {socialMedia?.map(({ name, url, icon }) => (
           <a
             key={url}
             href={url}

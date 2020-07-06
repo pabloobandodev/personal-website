@@ -86,7 +86,7 @@ export const getAuthor = async (): Promise<Author> => {
     query: AUTHOR_QUERY,
     variables: { name: AUTHOR_NAME_DATOCMS },
   })
-  return data.author
+  return data?.author
 }
 
 export const getAllPosts = async (): Promise<Post[]> => {
@@ -94,7 +94,7 @@ export const getAllPosts = async (): Promise<Post[]> => {
     query: ALL_POSTS_QUERY,
     variables: { limit: 10 },
   })
-  return data.allPosts
+  return data?.allPosts
 }
 
 export const getPost = async (slug: string | string[]): Promise<Post> => {
@@ -102,7 +102,7 @@ export const getPost = async (slug: string | string[]): Promise<Post> => {
     query: POST_QUERY,
     variables: { slug: slug },
   })
-  const processedContent = await remark().use(html).process(data.post.content)
+  const processedContent = await remark().use(html).process(data?.post.content)
   const content = processedContent.toString()
-  return { ...data.post, content }
+  return { ...data?.post, content }
 }
