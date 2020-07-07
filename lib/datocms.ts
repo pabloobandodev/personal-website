@@ -1,8 +1,7 @@
 import { GraphQLClient } from 'graphql-request'
 import remark from 'remark'
 import html from 'remark-html'
-import { RequestProps, Author, Post } from 'lib/types'
-import { AUTHOR_NAME_DATOCMS } from 'lib/constants'
+import { RequestProps, Post } from 'lib/types'
 
 export const request = ({ query, variables }: RequestProps) => {
   const endpoint = process.env.NEXT_DATOCMS_API_ENDPOINT
@@ -13,16 +12,6 @@ export const request = ({ query, variables }: RequestProps) => {
   })
   return client.request(query, variables)
 }
-
-export const AUTHOR_QUERY = `
-  query AUTHOR_QUERY($name: String!) {
-    author(filter: { name: { matches: { pattern: $name } } }) {
-      name
-      description
-      hobbies
-    }
-  }
-`
 
 export const ALL_POSTS_QUERY = `
   query ALL_POSTS_QUERY($limit: IntType!) {
@@ -53,10 +42,6 @@ export const ALL_POSTS_QUERY = `
 export const POST_QUERY = `
 query POST_QUERY($slug: String!){
   post(filter: { slug: { eq: $slug } }) {
-    author {
-      name
-      description
-    }
     content
     id
     title
@@ -80,14 +65,6 @@ query POST_QUERY($slug: String!){
   }
 }
 `
-
-export const getAuthor = async (): Promise<Author> => {
-  const data = await request({
-    query: AUTHOR_QUERY,
-    variables: { name: AUTHOR_NAME_DATOCMS },
-  })
-  return data?.author
-}
 
 export const getAllPosts = async (): Promise<Post[]> => {
   const data = await request({

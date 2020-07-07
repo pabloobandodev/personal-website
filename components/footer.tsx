@@ -2,7 +2,7 @@
 import { css, jsx } from '@emotion/core'
 import { useTheme } from 'emotion-theming'
 import { Theme } from 'lib/types'
-import { socialMedia } from 'lib/constants'
+import { author } from 'lib/constants'
 
 const container = css`
   display: flex;
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
     <footer css={container}>
       <p css={hashtag}>#blacklivesmatter ✊🏾</p>
       <div css={containerIcons}>
-        {socialMedia?.map(({ name, url, icon }) => (
+        {author.socialMedia.map(({ name, url, icon }) => (
           <a
             key={url}
             href={url}

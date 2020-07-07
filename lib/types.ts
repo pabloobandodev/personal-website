@@ -1,20 +1,17 @@
-export type Author = {
-  createdAt?: Date
-  description?: String
-  hobbies?: string[]
-  id?: String
-  name?: String
-  updatedAt?: Date
-}
-
 export type Social = {
   name: string
   url: string
   icon: React.ReactNode
 }[]
 
+export type Author = {
+  name: string
+  description: String
+  hobbies: string[]
+  socialMedia
+}
+
 export type Post = {
-  author?: Author
   content?: string
   coverImage?: any
   createdAt?: string

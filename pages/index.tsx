@@ -1,12 +1,10 @@
 /** @jsx jsx */
 import { css, jsx, keyframes } from '@emotion/core'
-import { GetStaticProps } from 'next'
 import Link from 'next/link'
 import { FaGift } from 'react-icons/fa'
 import Page from 'components/page'
 import Footer from 'components/footer'
-import { Author } from 'lib/types'
-import { getAuthor } from 'lib/datocms'
+import { author } from 'lib/constants'
 
 export const text = css`
   line-height: 1.7;
@@ -64,7 +62,7 @@ export const iconGift = css`
   }
 `
 
-const Home: React.FC<{ author: Author }> = ({ author }) => {
+const Home: React.FC = () => {
   return (
     <Page>
       <main css={main}>
@@ -107,15 +105,6 @@ const Home: React.FC<{ author: Author }> = ({ author }) => {
       <Footer />
     </Page>
   )
-}
-
-export const getStaticProps: GetStaticProps = async () => {
-  const author = await getAuthor()
-  return {
-    props: {
-      author,
-    },
-  }
 }
 
 export default Home
