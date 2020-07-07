@@ -8,7 +8,6 @@ import { Author } from 'lib/types'
 
 export const SITE_TITLE = 'Pablo Obando 🧙'
 export const SITE_URL = 'https://pabloobando.dev/'
-
 export const author: Author = {
   name: 'Pablo Obando',
   description: `I'm a software developer, a simple guy who enjoys programming and good beers 🍺`,
