@@ -3,6 +3,7 @@ import {
   FaGithub,
   FaLinkedinIn,
   FaStackOverflow,
+  FaDev,
 } from 'react-icons/fa'
 import { Author } from 'lib/types'
 
@@ -22,7 +23,7 @@ export const author: Author = {
   ],
   socialMedia: [
     {
-      name: 'facebook',
+      name: 'twitter',
       url: 'https://www.twitter.com/pabloobandodev/',
       icon: <FaTwitter />,
     },
@@ -40,6 +41,11 @@ export const author: Author = {
       name: 'stackoverflow',
       url: 'https://stackoverflow.com/story/pabloobandodev',
       icon: <FaStackOverflow />,
+    },
+    {
+      name: 'fadev',
+      url: 'https://dev.to/pabloobandodev',
+      icon: <FaDev />,
     },
   ],
 }
