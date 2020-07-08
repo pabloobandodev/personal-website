@@ -12,6 +12,8 @@
 
 This is my personal site, it also has a blog area! ✍️
 
+https://pabloobando.dev 👀
+
 If you liked it, it is open source, you can follow any of the following tutorials where I will take you to the point where you deploy the site with your data! 💚
 
 Tutorials:
