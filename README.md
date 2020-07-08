@@ -1,8 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">My Personal Website 💻 ❣️</h1>
 
-## Getting Started
+<p align="center">
 
-First, run the development server:
+<img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" >
+<img src="https://badges.frapsoft.com/os/mit/mit.svg?v=103" >
+<img src="https://badges.frapsoft.com/typescript/code/typescript.png?v=101" >
+
+</p>
+
+## What is?
+
+This is my personal site, it also has a blog area! ✍️
+
+If you liked it, it is open source, you can follow any of the following tutorials where I will take you to the point where you deploy the site with your data! 💚
+
+## Installation
+
+```bash
+https://github.com/pabloobandodev/personal-website.git
+```
+
+## Usage
+
+1- Run the development server:
 
 ```bash
 npm run dev
@@ -10,21 +30,14 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2- Open: [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Contributing
 
-## Learn More
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-To learn more about Next.js, take a look at the following resources:
+Please make sure to update tests as appropriate.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[MIT](https://choosealicense.com/licenses/mit/)
