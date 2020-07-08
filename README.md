@@ -14,10 +14,22 @@ This is my personal site, it also has a blog area! ✍️
 
 If you liked it, it is open source, you can follow any of the following tutorials where I will take you to the point where you deploy the site with your data! 💚
 
+Tutorials:
+
+- EASY IMPLEMENTATION
+  We're going to focus on the service external services configs, DatoCMS and SendGrid
+  https://pabloobando.dev/posts/easy-implementation
+
+- EXPLAINED IMPLEMENTATION
+  We're going to focus on the service external services configs, DatoCMS and SendGrid, and the Code
+  https://pabloobando.dev/posts/explained-implementation
+
+I made it with a lot of love ♥️
+
 ## Installation
 
 ```bash
-https://github.com/pabloobandodev/personal-website.git
+git clone https://github.com/pabloobandodev/personal-website.git
 ```
 
 ## Usage
