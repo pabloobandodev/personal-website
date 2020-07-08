@@ -4,7 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import Page from 'components/page'
 import Footer from 'components/footer'
-import { main, text } from 'pages'
+import { main, text, link } from 'pages'
 
 const containerOptions = css`
   display: flex;
@@ -38,7 +38,13 @@ const SourceCode: React.FC = () => {
           <h1 css={text}>Do you like my website? ❣️</h1>
           <p css={text}>
             I decided to make this project open source, therefore if you need a
-            personal website you can use it 💚
+            personal website you can use it 💚{' '}
+            <a
+              href='https://github.com/pabloobandodev/personal-website'
+              css={link}
+            >
+              This is the repository! 👀
+            </a>
           </p>
           <p css={text}>
             I did two ways explaining how to use the project, and do a deploy

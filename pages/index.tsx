@@ -24,7 +24,7 @@ const list = css`
   padding: 0 1rem 2rem;
 `
 
-const link = (theme: Theme) => css`
+export const link = (theme: Theme) => css`
   ${text};
   text-decoration: none;
   color: ${theme.primary};
