@@ -31,6 +31,7 @@ const article = css`
   & img {
     ${img}
   }
+  word-wrap: break-word;
 `
 
 const PostPage: React.FC<{ post: Post }> = ({ post }) => {
