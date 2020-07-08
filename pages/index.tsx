@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { FaGift } from 'react-icons/fa'
 import Page from 'components/page'
 import Footer from 'components/footer'
+import { useTheme } from 'emotion-theming'
+import { Theme } from 'lib/types'
 import { author } from 'lib/constants'
 
 export const text = css`
@@ -22,12 +24,10 @@ const list = css`
   padding: 0 1rem 2rem;
 `
 
-const link = css`
+const link = (theme: Theme) => css`
   ${text};
   text-decoration: none;
-  &:hover {
-    cursor: pointer;
-  }
+  color: ${theme.primary};
 `
 
 const containerGift = css`
@@ -63,6 +63,7 @@ export const iconGift = css`
 `
 
 const Home: React.FC = () => {
+  const theme = useTheme<Theme>()
   return (
     <Page>
       <main css={main}>
@@ -88,15 +89,13 @@ const Home: React.FC = () => {
             </i>{' '}
             projects or business, you can{' '}
             <Link href='/contact'>
-              <a css={link}>
-                <span>contact me!</span>
-              </a>
+              <a css={link(theme)}>contact me!</a>
             </Link>
           </p>
         </section>
         <section css={containerGift}>
           <Link href='/open-source'>
-            <a css={link}>
+            <a css={link(theme)}>
               <FaGift css={iconGift} />
             </a>
           </Link>

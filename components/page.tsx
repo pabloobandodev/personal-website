@@ -29,9 +29,6 @@ const globalStyles = (theme: Theme) => css`
     color: ${theme.body};
     background-color: ${theme.background};
   }
-  span {
-    color: ${theme.primary};
-  }
 `
 
 const innerContainer = css`
