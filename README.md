@@ -1,4 +1,4 @@
-<h1 align="center" style="color: #ff85cc;">My Personal Website 🚀</h1>
+<h1 align="center" style="color:#ff85cc;">My Personal Website 🚀</h1>
 
 <p align="center">
 
