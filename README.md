@@ -12,7 +12,7 @@
 
 This is my personal site, it also has a blog area! ✍️
 
-<a href="https://pabloobando.dev" target="_blank">Go a head and visit it 👀</a>
+<a href="https://pabloobando.dev">Go a head and visit it </a> 👀
 
 If you liked it, it is open source, you can follow any of the following tutorials where I will take you to the point where you deploy the site with your data! 💚
 
