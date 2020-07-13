@@ -4,7 +4,7 @@ import html from 'remark-html'
 import { RequestProps, Post } from 'lib/types'
 
 export const request = ({ query, variables }: RequestProps) => {
-  const client = new GraphQLClient('https://graphql.datocms.com/', {
+  const client = new GraphQLClient(`https://graphql.datocms.com/`, {
     headers: {
       authorization: `Bearer ${process.env.NEXT_DATOCMS_API_TOKEN}`,
     },
