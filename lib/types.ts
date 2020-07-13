@@ -8,7 +8,8 @@ export type Author = {
   name: string
   description: string
   hobbies: string[]
-  socialMedia
+  companies: { url: string; label: string }[]
+  socialMedia: Social
 }
 
 export type Post = {

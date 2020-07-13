@@ -5,7 +5,7 @@ const black = '#131415'
 const mirage = '#151f2b'
 
 const themeLight = {
-  background: white,
+  background: '#f0f3f9',
   body: black,
   primary: '#9e0e63',
   white: white,

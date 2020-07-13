@@ -11,7 +11,7 @@ export const SITE_TITLE = 'Pablo Obando 🧙'
 export const SITE_URL = 'https://pabloobando.dev/'
 export const author: Author = {
   name: 'Pablo Obando',
-  description: `I'm a software developer, a simple guy who enjoys programming and good beers 🍺`,
+  description: `I'm a software engineer who enjoys programming and good beers 🍺`,
   hobbies: [
     '💚 Open Sourcer',
     '👩‍🔬 Science',
@@ -21,31 +21,27 @@ export const author: Author = {
     '🍻 More beers with good friends',
     '👨‍💻 More programming',
   ],
+  companies: [
+    { url: 'https://oktara.com/', label: '🇺🇸 🇨🇷 Oktara' },
+    { url: 'https://bananacode.co/', label: '🇺🇸 🇨🇷 🇮🇳 Bananacode' },
+    { url: 'https://blockmatic.io/', label: '🌎 Blockmatic ' },
+    { url: 'https://nw-ideas.com/', label: '🇩🇪 🇨🇷 Nw Ideas' },
+  ],
   socialMedia: [
     {
-      name: 'twitter',
+      name: 'Twitter',
       url: 'https://www.twitter.com/pabloobandodev/',
       icon: <FaTwitter />,
     },
     {
-      name: 'github',
+      name: 'GitHub',
       url: 'https://github.com/pabloobandodev',
       icon: <FaGithub />,
     },
     {
-      name: 'linkedin',
+      name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/pabloobandodev',
       icon: <FaLinkedinIn />,
-    },
-    {
-      name: 'stackoverflow',
-      url: 'https://stackoverflow.com/story/pabloobandodev',
-      icon: <FaStackOverflow />,
-    },
-    {
-      name: 'fadev',
-      url: 'https://dev.to/pabloobandodev',
-      icon: <FaDev />,
     },
   ],
 }

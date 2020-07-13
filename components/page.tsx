@@ -32,7 +32,7 @@ const globalStyles = (theme: Theme) => css`
 `
 
 const innerContainer = css`
-  max-width: 53rem;
+  max-width: 60rem;
   padding: 1rem 1rem;
   min-height: 100vh;
   margin: 0 auto;

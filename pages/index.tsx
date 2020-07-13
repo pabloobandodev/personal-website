@@ -19,7 +19,7 @@ export const main = css`
   padding: 3.5rem 2rem;
 `
 
-const list = css`
+export const list = css`
   ${text};
   padding: 0 1rem 2rem;
 `
@@ -28,6 +28,9 @@ export const link = (theme: Theme) => css`
   ${text};
   text-decoration: none;
   color: ${theme.primary};
+  &:hover {
+    cursor: pointer;
+  }
 `
 
 const containerGift = css`
@@ -68,11 +71,30 @@ const Home: React.FC = () => {
     <Page>
       <main css={main}>
         <section>
-          <h2 css={text}>Hey ✌️</h2>
+          <h1 css={text}>
+            Hey ✌, my name is <strong>{author?.name}</strong>
+          </h1>
+          <p css={text}>{author?.description}</p>
           <p css={text}>
-            My name is <strong>{author?.name}</strong>, {author?.description}
+            I make web and mobile applications, both the front end and the back
+            end,{' '}
+            <Link href='/uses'>
+              <a css={link(theme)}>here</a>
+            </Link>{' '}
+            are some of things I use daily.
           </p>
-          <h3>Another cool things that I enjoy</h3>
+          <p css={text}></p>
+          <h3>Companies i have worked with</h3>
+          <ul css={list}>
+            {author?.companies?.map((company) => (
+              <li key={company.label}>
+                <a css={link(theme)} href={company.url} target='_blank'>
+                  {company.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <h3>Cool things that I enjoy</h3>
           <ul css={list}>
             {author?.hobbies?.map((hobby) => (
               <li key={hobby}>{hobby}</li>
