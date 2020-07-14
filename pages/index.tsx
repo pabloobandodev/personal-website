@@ -91,13 +91,14 @@ const Home: React.FC = () => {
         `}
       >
         <section>
-          <h1 css={text}>Hi there, I'm {author?.name} 👋</h1>
-          <p css={text}>{author?.description}</p>
           <img
             src='/images/profile.png'
             css={authorImage}
             alt='Profile image'
           />
+          <h1 css={text}>Hi there, I'm {author?.name} 👋</h1>
+          <p css={text}>{author?.description}</p>
+
           <p>
             I design and made application around web and mobile technologies.
           </p>
