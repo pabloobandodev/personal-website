@@ -1,26 +1,11 @@
-import {
-  FaTwitter,
-  FaGithub,
-  FaLinkedinIn,
-  FaStackOverflow,
-  FaDev,
-} from 'react-icons/fa'
+import { FaTwitter, FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { Author } from 'lib/types'
 
 export const SITE_TITLE = 'Pablo Obando 🧙'
 export const SITE_URL = 'https://pabloobando.dev/'
 export const author: Author = {
-  name: 'Pablo Obando',
-  description: `I'm a software engineer who enjoys programming and good beers 🍺`,
-  hobbies: [
-    '💚 Open Sourcer',
-    '👩‍🔬 Science',
-    '📜 History',
-    '🦄 Chill Out',
-    '😺 Smile',
-    '🍻 More beers with good friends',
-    '👨‍💻 More programming',
-  ],
+  name: 'Pablo',
+  description: `A software engineer who enjoys programming and good beers, living in Costa Rica`,
   companies: [
     { url: 'https://oktara.com/', label: '🇺🇸 🇨🇷 Oktara' },
     { url: 'https://bananacode.co/', label: '🇺🇸 🇨🇷 🇮🇳 Bananacode' },

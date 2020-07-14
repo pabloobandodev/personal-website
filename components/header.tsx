@@ -24,7 +24,7 @@ const options = css`
   align-items: center;
 `
 
-const authorImage = css`
+const logo = css`
   width: 7rem;
   height: 7rem;
   @media (max-width: 768px) {
@@ -40,15 +40,10 @@ const Header: React.FC = () => {
     <header>
       <nav css={container}>
         <ActiveLink href='/'>
-          <img
-            src='/images/profile.png'
-            css={authorImage}
-            alt='Profile image'
-          />
+          <img src='/images/logo.png' css={logo} alt='Profile image' />
         </ActiveLink>
         <div css={options}>
-          <ActiveLink href='/contact'>contact</ActiveLink>
-          <ActiveLink href='/posts'>posts</ActiveLink>
+          <ActiveLink href='/blog'>blog</ActiveLink>
           <button
             onClick={toggle}
             css={themeIcon(theme)}

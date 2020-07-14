@@ -49,7 +49,7 @@ const PostPage: React.FC<{ post: Post }> = ({ post }) => {
         </title>
         <meta property='og:title' content={post?.title} />
         <meta property='og:url' content={`${SITE_URL}${post?.slug}`} />
-        <link rel='canonical' href={`${SITE_URL}/posts/${post?.slug}`} />
+        <link rel='canonical' href={`${SITE_URL}/blog/${post?.slug}`} />
         <meta property='og:description' content={post?.excerpt} />
         <meta name='description' content={post?.excerpt} />
       </Head>
@@ -86,7 +86,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 export const getStaticPaths: GetStaticPaths = async () => {
   const allPosts = await getAllPosts()
   return {
-    paths: allPosts?.map((post) => `/posts/${post?.slug}`),
+    paths: allPosts?.map((post) => `/blog/${post?.slug}`),
     fallback: true,
   }
 }

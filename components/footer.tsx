@@ -6,31 +6,29 @@ import { author } from 'lib/constants'
 
 const container = css`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
 `
 
 const hashtag = css`
   font-weight: bold;
-  @media (max-width: 768px) {
-    font-size: 0.7rem;
-  }
 `
 
 const containerIcons = css`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
 `
 
 const iconStyle = (theme: Theme) => css`
   color: ${theme.body};
-  font-size: 2em;
-  margin-left: 2rem;
+  font-size: 1.5em;
+  padding: 0 0.5rem;
   &:hover {
     color: ${theme.primary};
-    transform: scale(1.3);
     cursor: pointer;
   }
   @media (max-width: 768px) {

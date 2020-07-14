@@ -58,12 +58,12 @@ const SourceCode: React.FC = () => {
           <p css={text}>So get to work 🚀</p>
         </section>
         <section css={containerOptions}>
-          <Link href='/posts/easy-implementation'>
+          <Link href='/blog/easy-implementation'>
             <a css={option}>
               <h2 css={text}>Easy Implementation</h2>
             </a>
           </Link>
-          <Link href='/posts/explained-implementation'>
+          <Link href='/blog/explained-implementation'>
             <a css={option}>
               <h2 css={text}>Explained Implementation</h2>
             </a>
