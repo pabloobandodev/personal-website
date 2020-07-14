@@ -15,45 +15,39 @@ const Uses: React.FC = () => {
             <li>
               My favorite editor these days is{' '}
               <a href='https://code.visualstudio.com/'>VS Code</a> with the{' '}
-              <b>Default Dark+ Theme</b>. I do nearly all my coding in it.
+              <a href='https://marketplace.visualstudio.com/items?itemName=whizkydee.material-palenight-theme'>
+                Palenight Theme
+              </a>
+              . I do nearly all my coding in it.
             </li>
             <li>
-              From time to time I still go back to{' '}
-              <a href='https://www.sublimetext.com/3'>Sublime Text 3</a> ot fire
-              up <a href='https://www.jetbrains.com/webstorm/'>Webstorm</a>.
-            </li>
-            <li>
-              My Terminal is the good old{' '}
-              <a href='https://www.iterm2.com/version3.html'>iTerm 3</a>. I use
-              it together with{' '}
-              <a href='https://github.com/ohmyzsh/ohmyzsh'>Oh my zsh</a> and the{' '}
-              <b>smt</b> theme.
+              My Terminal is the great
+              <a href='https://hyper.is/'>Hyper</a>. I use it together with zsh
+              and the <b>hyper-whimsy</b> theme.
             </li>
             <li>
               I have a lot of custom stuff and aliases in{' '}
-              <a href='https://github.com/tmaximini/.dotfiles'>my dotfiles</a>.
+              <a href='https://github.com/pabloobandodev/.dotfiles'>
+                my dotfiles
+              </a>
+              .
             </li>
           </ul>
         </section>
         <section>
           <h3>Programming</h3>
           <ul>
-            <li>Javascript 😃</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>AWS</li>
-            <li>GraphQL</li>
-            <li>Python</li>
+            <li>💛 JavaScript</li>
+            <li>💙 React Js | Native</li>
+            <li>💚 Node Js</li>
+            <li>❤️ GraphQL</li>
+            <li>🖤 Next Js</li>
+            <li>💜 Gatsby</li>
           </ul>
         </section>
         <section>
           <h3>Apps & Productivity</h3>
           <ul>
-            <li>
-              My most important tool these days is{' '}
-              <a href='https://1password.com/'>1Password</a> which keeps track
-              of all my passwords.
-            </li>
             <li>
               I use <a href='https://todoist.com/app'>Todoist</a> to keep track
               of my tasks and daily chores.
