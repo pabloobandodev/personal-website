@@ -17,12 +17,12 @@ export const text = css`
 
 export const main = css`
   flex-grow: 1;
-  padding: 3.5rem 2rem;
+  padding: 3rem 2rem;
 `
 
 export const list = css`
   ${text};
-  padding: 0 0 0 1rem;
+  list-style-type: none;
 `
 
 export const link = (theme: Theme) => css`
@@ -36,7 +36,7 @@ export const link = (theme: Theme) => css`
 
 const containerGift = css`
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 2.5rem;
 `
 
 const shake = keyframes`
@@ -72,8 +72,7 @@ const authorImage = css`
   border-radius: 4rem;
   box-shadow: white 0px 0px 0px 3px, rgb(0, 0, 0, 0.2) 0px 3px 8px 3px;
   border-radius: 50%;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   @media (max-width: 768px) {
     width: 5rem;
     height: 5rem;
@@ -98,7 +97,13 @@ const Home: React.FC = () => {
           />
           <h1 css={text}>Hi there, I'm {author?.name} 👋</h1>
           <p css={text}>{author?.description}</p>
-          <p>I design and made web, mobile applications 👨‍💻</p>
+          <p>I design and made web and mobile applications 👨‍💻</p>
+          <h3>Another cool things that I enjoy</h3>
+          <ul css={list}>
+            {author?.hobbies?.map((hobby) => (
+              <li key={hobby}>{hobby}</li>
+            ))}
+          </ul>
           <p css={text}>
             <Link href='/uses'>
               <a css={link(theme)}>Here</a>

@@ -12,6 +12,7 @@ export const author: Author = {
     { url: 'https://blockmatic.io/', label: '🌎 Blockmatic ' },
     { url: 'https://nw-ideas.com/', label: '🇩🇪 🇨🇷 Nw Ideas' },
   ],
+  hobbies: ['💚 Open Sourcer', '👩‍🔬 Science', '📜 History', '🦄 Chill Out'],
   socialMedia: [
     {
       name: 'Twitter',

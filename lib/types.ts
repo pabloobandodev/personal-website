@@ -7,6 +7,7 @@ export type Social = {
 export type Author = {
   name: string
   description: string
+  hobbies: string[]
   companies: { url: string; label: string }[]
   socialMedia: Social
 }
