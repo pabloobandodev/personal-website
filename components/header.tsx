@@ -43,6 +43,7 @@ const Header: React.FC = () => {
           <img src='/images/logo.png' css={logo} alt='Profile image' />
         </ActiveLink>
         <div css={options}>
+          <ActiveLink href='/contact'>contact</ActiveLink>
           <ActiveLink href='/blog'>blog</ActiveLink>
           <button
             onClick={toggle}

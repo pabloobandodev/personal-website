@@ -6,12 +6,6 @@ export const SITE_URL = 'https://pabloobando.dev/'
 export const author: Author = {
   name: 'Pablo',
   description: `A software engineer who enjoys programming and good beers 🍻`,
-  companies: [
-    { url: 'https://oktara.com/', label: '🇺🇸 🇨🇷 Oktara' },
-    { url: 'https://bananacode.co/', label: '🇺🇸 🇨🇷 🇮🇳 Bananacode' },
-    { url: 'https://blockmatic.io/', label: '🌎 Blockmatic ' },
-    { url: 'https://nw-ideas.com/', label: '🇩🇪 🇨🇷 Nw Ideas' },
-  ],
   hobbies: ['💚 Open Sourcer', '👩‍🔬 Science', '📜 History', '🦄 Chill Out'],
   socialMedia: [
     {
