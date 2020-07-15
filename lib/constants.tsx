@@ -5,7 +5,7 @@ export const SITE_TITLE = 'Pablo Obando 🧙'
 export const SITE_URL = 'https://pabloobando.dev/'
 export const author: Author = {
   name: 'Pablo',
-  description: `A software engineer who enjoys programming and good beers, living in Costa Rica`,
+  description: `A software engineer who enjoys programming and good beers 🍻`,
   companies: [
     { url: 'https://oktara.com/', label: '🇺🇸 🇨🇷 Oktara' },
     { url: 'https://bananacode.co/', label: '🇺🇸 🇨🇷 🇮🇳 Bananacode' },

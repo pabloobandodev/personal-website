@@ -98,10 +98,7 @@ const Home: React.FC = () => {
           />
           <h1 css={text}>Hi there, I'm {author?.name} 👋</h1>
           <p css={text}>{author?.description}</p>
-
-          <p>
-            I design and made application around web and mobile technologies.
-          </p>
+          <p>I design and made web, mobile applications 👨‍💻</p>
           <p css={text}>
             <Link href='/uses'>
               <a css={link(theme)}>Here</a>
