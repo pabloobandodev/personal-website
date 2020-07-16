@@ -11,10 +11,9 @@ const Uses: React.FC = () => {
       <main
         css={css`
           ${main}
-          ${text}
         `}
       >
-        <section>
+        <section css={text}>
           <h3 css={text}>Programming</h3>
           <ul>
             <li>💛 JavaScript</li>
@@ -26,7 +25,7 @@ const Uses: React.FC = () => {
             <li>🧡 Git</li>
           </ul>
         </section>
-        <section>
+        <section css={text}>
           <h3>Editor & Console</h3>
           <ul>
             <li>
@@ -67,7 +66,7 @@ const Uses: React.FC = () => {
             </li>
           </ul>
         </section>
-        <section>
+        <section css={text}>
           <h3>Apps & Productivity</h3>
           <ul>
             <li>
@@ -110,7 +109,7 @@ const Uses: React.FC = () => {
             </li>
             <li>
               Sometimes I use{' '}
-              <a href='https://brew.sh/' target='_blank' css={link}>
+              <a href='https://yarnpkg.com/' target='_blank' css={link}>
                 Homebrew
               </a>{' '}
               to install missing packages on OSX.
@@ -124,7 +123,7 @@ const Uses: React.FC = () => {
             </li>
           </ul>
         </section>
-        <section>
+        <section css={text}>
           <h3>Desk Setup</h3>
           <ul>
             <li>
