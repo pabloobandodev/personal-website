@@ -74,8 +74,8 @@ const authorImage = css`
   border-radius: 50%;
   margin-bottom: 1rem;
   @media (max-width: 768px) {
-    width: 5rem;
-    height: 5rem;
+    width: 7rem;
+    height: 7rem;
   }
 `
 
