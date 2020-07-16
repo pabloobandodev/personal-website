@@ -31,25 +31,6 @@ const Uses: React.FC = () => {
           <ul>
             <li>
               My favorite editor these days is{' '}
-<<<<<<< HEAD
-              <a href='https://code.visualstudio.com/'>VS Code</a> with the{' '}
-              <a href='https://marketplace.visualstudio.com/items?itemName=whizkydee.material-palenight-theme'>
-                Palenight Theme
-              </a>
-              . I do nearly all my coding in it.
-            </li>
-            <li>
-              My Terminal is the great
-              <a href='https://hyper.is/'>Hyper</a>. I use it together with zsh
-              and the <b>hyper-whimsy</b> theme.
-            </li>
-            <li>
-              I have a lot of custom stuff and aliases in{' '}
-              <a href='https://github.com/pabloobandodev/.dotfiles'>
-                my dotfiles
-              </a>
-              .
-=======
               <a
                 href='https://code.visualstudio.com/'
                 target='_blank'
@@ -83,33 +64,10 @@ const Uses: React.FC = () => {
               >
                 my dotfiles
               </a>
->>>>>>> center-design
             </li>
           </ul>
         </section>
         <section>
-<<<<<<< HEAD
-          <h3>Programming</h3>
-          <ul>
-            <li>💛 JavaScript</li>
-            <li>💙 React Js | Native</li>
-            <li>💚 Node Js</li>
-            <li>❤️ GraphQL</li>
-            <li>🖤 Next Js</li>
-            <li>💜 Gatsby</li>
-          </ul>
-        </section>
-        <section>
-          <h3>Apps & Productivity</h3>
-          <ul>
-            <li>
-              I use <a href='https://todoist.com/app'>Todoist</a> to keep track
-              of my tasks and daily chores.
-            </li>
-            <li>
-              For my writing and taking quick notes I use{' '}
-              <a href='https://ia.net/writer'>iA Writer</a>.
-=======
           <h3>Apps & Productivity</h3>
           <ul>
             <li>
@@ -118,7 +76,6 @@ const Uses: React.FC = () => {
                 Todoist
               </a>{' '}
               to keep track of my tasks and daily chores.
->>>>>>> center-design
             </li>
             <li>
               I use{' '}
