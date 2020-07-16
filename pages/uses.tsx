@@ -8,12 +8,30 @@ import { main, text, link } from 'pages'
 const Uses: React.FC = () => {
   return (
     <Page>
-      <main css={main}>
+      <main
+        css={css`
+          ${main}
+          ${text}
+        `}
+      >
+        <section>
+          <h3 css={text}>Programming</h3>
+          <ul>
+            <li>💛 JavaScript</li>
+            <li>💙 React Js | Native</li>
+            <li>💚 Node Js</li>
+            <li>❤️ GraphQL</li>
+            <li>🖤 Next Js</li>
+            <li>💜 Gatsby</li>
+            <li>🧡 Git</li>
+          </ul>
+        </section>
         <section>
           <h3>Editor & Console</h3>
           <ul>
             <li>
               My favorite editor these days is{' '}
+<<<<<<< HEAD
               <a href='https://code.visualstudio.com/'>VS Code</a> with the{' '}
               <a href='https://marketplace.visualstudio.com/items?itemName=whizkydee.material-palenight-theme'>
                 Palenight Theme
@@ -31,10 +49,46 @@ const Uses: React.FC = () => {
                 my dotfiles
               </a>
               .
+=======
+              <a
+                href='https://code.visualstudio.com/'
+                target='_blank'
+                css={link}
+              >
+                VS Code
+              </a>{' '}
+              with the{' '}
+              <a
+                href='https://marketplace.visualstudio.com/items?itemName=whizkydee.material-palenight-theme'
+                target='_blank'
+                css={link}
+              >
+                Palenight Theme
+              </a>
+              . I do all my coding in it.
+            </li>
+            <li>
+              My Terminal is the great{' '}
+              <a href='https://hyper.is/' target='_blank' css={link}>
+                Hyper
+              </a>
+              . I use it together with zsh and the <b>hyper-whimsy</b> theme.
+            </li>
+            <li>
+              I have a lot of custom stuff and aliases in{' '}
+              <a
+                href='https://github.com/pabloobandodev/.dotfiles'
+                target='_blank'
+                css={link}
+              >
+                my dotfiles
+              </a>
+>>>>>>> center-design
             </li>
           </ul>
         </section>
         <section>
+<<<<<<< HEAD
           <h3>Programming</h3>
           <ul>
             <li>💛 JavaScript</li>
@@ -55,31 +109,61 @@ const Uses: React.FC = () => {
             <li>
               For my writing and taking quick notes I use{' '}
               <a href='https://ia.net/writer'>iA Writer</a>.
+=======
+          <h3>Apps & Productivity</h3>
+          <ul>
+            <li>
+              I use{' '}
+              <a href='https://todoist.com/app' target='_blank' css={link}>
+                Todoist
+              </a>{' '}
+              to keep track of my tasks and daily chores.
+>>>>>>> center-design
             </li>
             <li>
-              <a href='https://notion.so'>Notion</a> is another note-taking and
-              journaling tool I don't want to live without.
+              I use{' '}
+              <a href='https://slack.com/' target='_blank' css={link}>
+                slack
+              </a>{' '}
+              always to communicate with my colleagues
             </li>
             <li>
-              I use <a href='https://www.spectacleapp.com/'>Spectacle</a> as my
-              window manager.
+              <a href='https://notion.so' target='_blank' css={link}>
+                Notion
+              </a>{' '}
+              is another note-taking and journaling tool
             </li>
             <li>
-              <a href='https://www.macbartender.com/'>Bartender</a> keeps my OSX
-              menu bar clean and organized.
-            </li>
-            <li>
-              <a href='https://www.dropbox.com'>Dropbox</a> helps me to sync and
-              backup all my important files across devices.
+              <a href='https://www.icloud.com/' target='_blank' css={link}>
+                iCloud
+              </a>{' '}
+              helps me to sync and backup all my important files across devices
+              I don't want to live without.
             </li>
             <li>
               I love{' '}
-              <a href='https://docs.docker.com/docker-for-mac/'>Docker</a>{' '}
-              because it helps me to keep my dev machine clean.
+              <a
+                href='https://macpaw.com/es/cleanmymac'
+                target='_blank'
+                css={link}
+              >
+                CleanMyMac X
+              </a>{' '}
+              because it helps me to keep my machine clean.
             </li>
             <li>
-              Sometimes I use <a href='https://brew.sh/'>Homebrew</a> to install
-              missing packages on OSX.
+              Sometimes I use{' '}
+              <a href='https://brew.sh/' target='_blank' css={link}>
+                Homebrew
+              </a>{' '}
+              to install missing packages on OSX.
+            </li>
+            <li>
+              I use{' '}
+              <a href='https://brew.sh/' target='_blank' css={link}>
+                yarn
+              </a>{' '}
+              as my package manager.
             </li>
           </ul>
         </section>
@@ -87,36 +171,57 @@ const Uses: React.FC = () => {
           <h3>Desk Setup</h3>
           <ul>
             <li>
-              My main desk is a{' '}
-              <a href='https://www.inwerk-bueromoebel.de/buerotische/hoehenverstellbare-schreibtische/steh-sitz-schreibtisch-masterlift2-sw-chrom-bm56947.html'>
-                Masterlift 2
-              </a>{' '}
-              adjustable standing desk.
-            </li>
-            <li>
-              My office chair is a used{' '}
-              <a href='https://www.designcabinet.de/herman-miller-aeron-chair-groesse-b-655'>
-                Hermann Miller Aeron
-              </a>{' '}
-              in size B.
-            </li>
-            <li>
-              Since this year I am using a Macbook pro 16". It is the best
-              computer I ever owned.
+              My laptop is a{' '}
+              <a
+                href='https://www.amazon.com/Apple-MacBook-16-Inch-Storage-2-6GHz/dp/B081FZV45H/'
+                target='_blank'
+                css={link}
+              >
+                Macbook pro 16"
+              </a>
             </li>
             <li>
               My monitor is the{' '}
-              <a href='hhttps://www.amazon.com/LG-32UD59-B-32-Inch-LED-Lit-FreeSync/dp/B0748KJY4Q'>
-                LG 32UD59-B
+              <a
+                href='https://www.amazon.com/Dell-U2717D-UltraSharp-InfinityEdge-Widescreen/dp/B01D402Z28'
+                target='_blank'
+                css={link}
+              >
+                Dell U2717D IPS 27" UltraSharp
               </a>{' '}
-              with a 2560 x 1440 resolution.
+              with a 2560 x 1440 at 60 Hz
             </li>
             <li>
               I use the{' '}
-              <a href='https://www.therooststand.com/'>roost laptop stand</a>{' '}
-              for my Laptop at home and when I travel.
+              <a
+                href='https://www.amazon.com/Nulaxy-ergon%C3%B3mico-ordenador-port%C3%A1til-plateado/dp/B077B9W343'
+                target='_blank'
+                css={link}
+              >
+                nulaxy laptop stand
+              </a>{' '}
+              for my Laptop
             </li>
-            <li>I use the Apple magic mouse and magic keyboard.</li>
+            <li>
+              I use the{' '}
+              <a
+                href='https://www.amazon.com/Apple-Magic-Mouse-Wireless-Rechargable/dp/B07BR94PPD/'
+                target='_blank'
+                css={link}
+              >
+                apple magic mouse 2
+              </a>
+            </li>
+            <li>
+              I use the{' '}
+              <a
+                href='https://www.amazon.com/Keychron-Bluetooth-Mechanical-Keyboard-Wireless-Keyboard/dp/B07QBPCW4J/'
+                target='_blank'
+                css={link}
+              >
+                keychron K2
+              </a>
+            </li>
           </ul>
         </section>
       </main>

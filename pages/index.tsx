@@ -11,17 +11,18 @@ import { author } from 'lib/constants'
 export const text = css`
   line-height: 1.7;
   letter-spacing: 1.2;
-  font-size: 1.1em;
+  margin: 0 0 1rem 0;
+  padding: 0;
 `
 
 export const main = css`
   flex-grow: 1;
-  padding: 3.5rem 2rem;
+  padding: 3rem 2rem;
 `
 
 export const list = css`
   ${text};
-  padding: 0 1rem 2rem;
+  list-style-type: none;
 `
 
 export const link = (theme: Theme) => css`
@@ -35,7 +36,7 @@ export const link = (theme: Theme) => css`
 
 const containerGift = css`
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 2.5rem;
 `
 
 const shake = keyframes`
@@ -65,54 +66,60 @@ export const iconGift = css`
   }
 `
 
+const authorImage = css`
+  width: 9rem;
+  height: 9rem;
+  border-radius: 4rem;
+  box-shadow: white 0px 0px 0px 3px, rgb(0, 0, 0, 0.2) 0px 3px 8px 3px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  @media (max-width: 768px) {
+    width: 7rem;
+    height: 7rem;
+  }
+`
+
 const Home: React.FC = () => {
   const theme = useTheme<Theme>()
   return (
     <Page>
-      <main css={main}>
+      <main
+        css={css`
+          ${main};
+          text-align: center;
+        `}
+      >
         <section>
-          <h1 css={text}>
-            Hey ✌, my name is <strong>{author?.name}</strong>
-          </h1>
+          <img
+            src='/images/profile.png'
+            css={authorImage}
+            alt='Profile image'
+          />
+          <h1 css={text}>Hi there, I'm {author?.name} 👋</h1>
           <p css={text}>{author?.description}</p>
-          <p css={text}>
-            I make web and mobile applications, both the front end and the back
-            end,{' '}
-            <Link href='/uses'>
-              <a css={link(theme)}>here</a>
-            </Link>{' '}
-            are some of things I use daily.
-          </p>
-          <p css={text}></p>
-          <h3>Companies i have worked with</h3>
-          <ul css={list}>
-            {author?.companies?.map((company) => (
-              <li key={company.label}>
-                <a css={link(theme)} href={company.url} target='_blank'>
-                  {company.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <h3>Cool things that I enjoy</h3>
+          <p>I design and made web and mobile applications 👨‍💻</p>
+          <h3>Another cool things that I enjoy</h3>
           <ul css={list}>
             {author?.hobbies?.map((hobby) => (
               <li key={hobby}>{hobby}</li>
             ))}
           </ul>
           <p css={text}>
-            This site has it a part of the blog with all my thoughts, and my
-            articles of software
+            <Link href='/uses'>
+              <a css={link(theme)}>Here</a>
+            </Link>{' '}
+            are some of things I use daily.
           </p>
           <p css={text}>
-            If you wanna talk about your{' '}
-            <i>
-              <small>(open/closed)</small>
-            </i>{' '}
-            projects or business, you can{' '}
-            <Link href='/contact'>
-              <a css={link(theme)}>contact me!</a>
-            </Link>
+            You can check out my blog ✍️ , or contact me to talk about your
+            projects in{' '}
+            <a
+              css={link(theme)}
+              href={author.socialMedia[2].url}
+              target='_blank'
+            >
+              {author.socialMedia[2].name}
+            </a>
           </p>
         </section>
         <section css={containerGift}>

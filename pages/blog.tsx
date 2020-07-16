@@ -38,12 +38,6 @@ const listElement = (theme: Theme) => css`
       #73dbc4 100%
     );
   }
-  &:hover {
-    .separator {
-      background-size: 50% auto;
-      animation: ${loading} 0.5s linear infinite;
-    }
-  }
 `
 
 const titleElement = (theme: Theme) => css`
@@ -57,7 +51,7 @@ const titleElement = (theme: Theme) => css`
   }
 `
 
-const Posts: React.FC<{ allPosts: Post[] }> = ({ allPosts }) => {
+const Blog: React.FC<{ allPosts: Post[] }> = ({ allPosts }) => {
   const theme = useTheme<Theme>()
   return (
     <Page>
@@ -66,7 +60,7 @@ const Posts: React.FC<{ allPosts: Post[] }> = ({ allPosts }) => {
           <ul css={list}>
             {allPosts?.map(({ title, excerpt, date, slug, coverImage }) => (
               <li css={listElement(theme)} key={slug}>
-                <Link href='/posts/[slug]' as={`/posts/${slug}`}>
+                <Link href='/blog/[slug]' as={`/blog/${slug}`}>
                   <a css={titleElement(theme)}>
                     <h2>{title}</h2>
                   </a>
@@ -95,4 +89,4 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
 }
 
-export default Posts
+export default Blog
