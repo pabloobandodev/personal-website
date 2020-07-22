@@ -1,18 +1,9 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core'
-import { FaLightbulb } from 'react-icons/fa'
 import { useThemeMode } from 'context/theme-context'
 import { useTheme } from 'emotion-theming'
 import { Theme } from 'lib/types'
 import ActiveLink from 'components/active-link'
-
-const themeIcon = (theme: Theme) => css`
-  background-color: transparent;
-  font-size: 1.1rem;
-  border: none;
-  text-align: center;
-  color: ${theme.contrast};
-`
 
 const container = css`
   display: flex;
@@ -23,18 +14,30 @@ const options = css`
   display: flex;
   align-items: center;
 `
-
 const logo = css`
-  width: 7rem;
-  height: 7rem;
+  width: 8rem;
+  height: 8rem;
   @media (max-width: 768px) {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
+  }
+`
+const button = css`
+  background-color: transparent;
+  border: none;
+  outline: none;
+`
+const themeIcon = css`
+  width: 2rem;
+  height: 2rem;
+  @media (max-width: 768px) {
+    width: 1rem;
+    height: 1rem;
   }
 `
 
 const Header: React.FC = () => {
-  const [, toggle] = useThemeMode()
+  const [isDark, toggle] = useThemeMode()
   const theme = useTheme<Theme>()
   return (
     <header>
@@ -45,12 +48,12 @@ const Header: React.FC = () => {
         <div css={options}>
           <ActiveLink href='/contact'>contact</ActiveLink>
           <ActiveLink href='/blog'>blog</ActiveLink>
-          <button
-            onClick={toggle}
-            css={themeIcon(theme)}
-            aria-label='Switch mode'
-          >
-            <FaLightbulb />
+          <button onClick={toggle} aria-label='Switch mode' css={button}>
+            {isDark ? (
+              <img src='/images/sun.png' alt='Sun icon' css={themeIcon} />
+            ) : (
+              <img src='/images/moon.png' alt='Moon icon' css={themeIcon} />
+            )}
           </button>
         </div>
       </nav>

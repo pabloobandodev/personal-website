@@ -14,17 +14,14 @@ export const text = css`
   margin: 0 0 1rem 0;
   padding: 0;
 `
-
 export const main = css`
   flex-grow: 1;
   padding: 3rem 2rem;
 `
-
 export const list = css`
   ${text};
   list-style-type: none;
 `
-
 export const link = (theme: Theme) => css`
   ${text};
   text-decoration: none;
@@ -33,12 +30,10 @@ export const link = (theme: Theme) => css`
     cursor: pointer;
   }
 `
-
 const containerGift = css`
+  margin-top: 2rem;
   text-align: center;
-  margin-top: 2.5rem;
 `
-
 const shake = keyframes`
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
@@ -56,16 +51,15 @@ const shake = keyframes`
     transform: translate3d(4px, 0, 0);
   }
 `
-
 export const iconGift = css`
-  font-size: 5rem;
+  height: 5rem;
+  width: auto;
   &:hover {
     cursor: pointer;
     animation: ${shake} 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
     transform: translate3d(0, 0, 0);
   }
 `
-
 const authorImage = css`
   width: 9rem;
   height: 9rem;
@@ -125,7 +119,7 @@ const Home: React.FC = () => {
         <section css={containerGift}>
           <Link href='/open-source'>
             <a css={link(theme)}>
-              <FaGift css={iconGift} />
+              <img src='/images/gift.png' css={iconGift} alt='Gift icon' />
             </a>
           </Link>
         </section>

@@ -8,6 +8,12 @@ import { useTheme } from 'emotion-theming'
 import { Theme } from 'lib/types'
 import { author } from 'lib/constants'
 
+export const iconGlove = css`
+  height: 7rem;
+  width: auto;
+  margin-bottom: 1.5rem;
+`
+
 const Contact: React.FC = () => {
   const theme = useTheme<Theme>()
   return (
@@ -21,6 +27,8 @@ const Contact: React.FC = () => {
         <section>
           <h1>Let's talk about coding and business</h1>
           <h3 css={text}>You can found me in</h3>
+          <img src='/images/glove.png' css={iconGlove} alt='Glove icon' />
+
           <ul css={list}>
             {author?.socialMedia?.map((media) => (
               <li key={media.name}>

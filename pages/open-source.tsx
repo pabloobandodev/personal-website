@@ -15,10 +15,9 @@ const containerOptions = css`
     flex-direction: column;
   }
 `
-
 const option = css`
-  width: 20rem;
-  height: 14rem;
+  width: 24rem;
+  height: 18rem;
   margin-top: 1rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   text-align: center;
@@ -28,6 +27,10 @@ const option = css`
     transition-duration: 0.3s;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.24);
   }
+`
+const iconIllustration = css`
+  height: 10rem;
+  width: auto;
 `
 
 const SourceCode: React.FC = () => {
@@ -61,11 +64,21 @@ const SourceCode: React.FC = () => {
           <Link href='/blog/easy-implementation'>
             <a css={option}>
               <h2 css={text}>Easy Implementation</h2>
+              <img
+                src='/images/easy.png'
+                css={iconIllustration}
+                alt='Easy way illustration'
+              />
             </a>
           </Link>
           <Link href='/blog/explained-implementation'>
             <a css={option}>
               <h2 css={text}>Explained Implementation</h2>
+              <img
+                src='/images/hard.png'
+                css={iconIllustration}
+                alt='Easy way illustration'
+              />
             </a>
           </Link>
         </section>
