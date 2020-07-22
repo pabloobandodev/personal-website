@@ -14,7 +14,7 @@ const Uses: React.FC = () => {
         `}
       >
         <section css={text}>
-          <h3 css={text}>Programming</h3>
+          <h3 css={text}>Programming 👨‍💻</h3>
           <ul>
             <li>💛 JavaScript</li>
             <li>💙 React Js | Native</li>
@@ -26,7 +26,7 @@ const Uses: React.FC = () => {
           </ul>
         </section>
         <section css={text}>
-          <h3>Editor & Console</h3>
+          <h3>Editor & Console 🔨</h3>
           <ul>
             <li>
               My favorite editor these days is{' '}
@@ -67,7 +67,7 @@ const Uses: React.FC = () => {
           </ul>
         </section>
         <section css={text}>
-          <h3>Apps & Productivity</h3>
+          <h3>Apps & Productivity 📊</h3>
           <ul>
             <li>
               I use{' '}
@@ -124,7 +124,7 @@ const Uses: React.FC = () => {
           </ul>
         </section>
         <section css={text}>
-          <h3>Desk Setup</h3>
+          <h3>Desk Setup 🖥️</h3>
           <ul>
             <li>
               My laptop is a{' '}

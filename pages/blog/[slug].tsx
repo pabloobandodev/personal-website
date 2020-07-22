@@ -21,12 +21,13 @@ const title = css`
     font-size: 1.1em;
   }
 `
-
 const img = css`
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 `
-
 const article = (theme: Theme) => css`
   ${text};
   & img {
@@ -54,7 +55,7 @@ const PostPage: React.FC<{ post: Post }> = ({ post }) => {
         <meta name='description' content={post?.excerpt} />
       </Head>
       <main css={main}>
-        <article css={article}>
+        <article css={article(theme)}>
           <h1 css={title}>{post?.title}</h1>
           {post?.coverImage?.responsiveImage?.src && (
             <img
