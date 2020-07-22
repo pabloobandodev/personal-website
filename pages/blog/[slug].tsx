@@ -21,7 +21,7 @@ const title = css`
     font-size: 1.1em;
   }
 `
-const img = css`
+const imgTitle = css`
   width: auto;
   height: 100%;
   display: block;
@@ -31,7 +31,8 @@ const img = css`
 const article = (theme: Theme) => css`
   ${text};
   & img {
-    ${img}
+    width: 100%;
+    height: auto;
   }
   word-wrap: break-word;
   a {
@@ -55,18 +56,19 @@ const PostPage: React.FC<{ post: Post }> = ({ post }) => {
         <meta name='description' content={post?.excerpt} />
       </Head>
       <main css={main}>
+        {post?.coverImage?.responsiveImage?.src && (
+          <img
+            src={post?.coverImage.responsiveImage.src}
+            alt={`Post Image of ${title}`}
+            css={css`
+              ${imgTitle};
+              max-height: 300px;
+            `}
+          />
+        )}
         <article css={article(theme)}>
           <h1 css={title}>{post?.title}</h1>
-          {post?.coverImage?.responsiveImage?.src && (
-            <img
-              src={post?.coverImage.responsiveImage.src}
-              alt={`Post Image of ${title}`}
-              css={css`
-                ${img};
-                max-height: 300px;
-              `}
-            />
-          )}
+
           <div css={text} dangerouslySetInnerHTML={{ __html: post?.content }} />
         </article>
       </main>
