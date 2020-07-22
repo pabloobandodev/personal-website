@@ -1,7 +1,7 @@
 import { FaTwitter, FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { Author } from 'lib/types'
 
-export const SITE_TITLE = 'Pablo Obando 🧙'
+export const SITE_TITLE = 'Pablo Obando 👨‍🚀'
 export const SITE_URL = 'https://pabloobando.dev/'
 export const author: Author = {
   name: 'Pablo',

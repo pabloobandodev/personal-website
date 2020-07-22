@@ -22,7 +22,9 @@ class MyDocument extends Document {
   render() {
     return (
       <html lang='en'>
-        <Head />
+        <Head>
+          <link rel='shortcut icon' href='/images/spaceship.png' />
+        </Head>
         <body>
           <Main />
           <NextScript />
