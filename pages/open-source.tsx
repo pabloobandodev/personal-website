@@ -18,10 +18,9 @@ const containerOptions = css`
 const option = css`
   width: 24rem;
   height: 18rem;
-  margin-top: 1rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   &:hover {
     cursor: pointer;
     transition-duration: 0.3s;
@@ -29,7 +28,7 @@ const option = css`
   }
 `
 const iconIllustration = css`
-  height: 10rem;
+  height: 12rem;
   width: auto;
 `
 

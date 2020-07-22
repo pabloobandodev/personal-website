@@ -9,7 +9,7 @@ import { Theme } from 'lib/types'
 import { author } from 'lib/constants'
 
 export const iconGlove = css`
-  height: 7rem;
+  height: 8rem;
   width: auto;
   margin-bottom: 1.5rem;
 `

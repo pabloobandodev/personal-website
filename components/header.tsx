@@ -15,8 +15,8 @@ const options = css`
   align-items: center;
 `
 const logo = css`
-  width: 8rem;
-  height: 8rem;
+  width: 9rem;
+  height: 9rem;
   @media (max-width: 768px) {
     width: 6rem;
     height: 6rem;

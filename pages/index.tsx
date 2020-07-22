@@ -52,7 +52,7 @@ const shake = keyframes`
   }
 `
 export const iconGift = css`
-  height: 5rem;
+  height: 6rem;
   width: auto;
   &:hover {
     cursor: pointer;
@@ -61,8 +61,8 @@ export const iconGift = css`
   }
 `
 const authorImage = css`
-  width: 9rem;
-  height: 9rem;
+  width: 8.5rem;
+  height: 8.5rem;
   border-radius: 4rem;
   box-shadow: white 0px 0px 0px 3px, rgb(0, 0, 0, 0.2) 0px 3px 8px 3px;
   border-radius: 50%;
