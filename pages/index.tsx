@@ -91,7 +91,7 @@ const Home: React.FC = () => {
           />
           <h1 css={text}>Hi there, I'm {author?.name} 👋</h1>
           <p css={text}>{author?.description}</p>
-          <p>I design and made web and mobile applications 👨‍💻</p>
+          <p>I make applications web and mobiles 👨‍💻</p>
           <h3>Another cool things that I enjoy</h3>
           <ul css={list}>
             {author?.hobbies?.map((hobby) => (
