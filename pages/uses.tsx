@@ -5,6 +5,15 @@ import Page from 'components/page'
 import Footer from 'components/footer'
 import { main, text, link } from 'pages'
 
+export const iconSpaceShift = css`
+  height: 6rem;
+  width: auto;
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+`
+
 const Uses: React.FC = () => {
   return (
     <Page>
@@ -14,7 +23,7 @@ const Uses: React.FC = () => {
         `}
       >
         <section css={text}>
-          <h3 css={text}>Programming 👨‍💻</h3>
+          <h3 css={text}>👨‍💻 Programming</h3>
           <ul>
             <li>💛 JavaScript</li>
             <li>💙 React Js | Native</li>
@@ -26,7 +35,7 @@ const Uses: React.FC = () => {
           </ul>
         </section>
         <section css={text}>
-          <h3>Editor & Console 🔨</h3>
+          <h3>🔨 Editor & Console</h3>
           <ul>
             <li>
               My favorite editor these days is{' '}
@@ -67,7 +76,7 @@ const Uses: React.FC = () => {
           </ul>
         </section>
         <section css={text}>
-          <h3>Apps & Productivity 📊</h3>
+          <h3>📊 Apps & Productivity</h3>
           <ul>
             <li>
               I use{' '}
@@ -124,7 +133,7 @@ const Uses: React.FC = () => {
           </ul>
         </section>
         <section css={text}>
-          <h3>Desk Setup 🖥️</h3>
+          <h3>🖥️ Desk Setup</h3>
           <ul>
             <li>
               My laptop is a{' '}
@@ -180,6 +189,11 @@ const Uses: React.FC = () => {
             </li>
           </ul>
         </section>
+        <img
+          src='/images/spaceShip.png'
+          css={iconSpaceShift}
+          alt='SpaceShip icon'
+        />
       </main>
       <Footer />
     </Page>

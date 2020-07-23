@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Page from 'components/page'
 import Footer from 'components/footer'
 import { main, text, link } from 'pages'
+import { iconSpaceShift } from 'pages/uses'
 
 const containerOptions = css`
   display: flex;
@@ -82,6 +83,11 @@ const SourceCode: React.FC = () => {
           </Link>
         </section>
       </main>
+      <img
+        src='/images/spaceShip.png'
+        css={iconSpaceShift}
+        alt='SpaceShip icon'
+      />
       <Footer />
     </Page>
   )

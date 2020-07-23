@@ -61,8 +61,8 @@ export const iconGift = css`
   }
 `
 const authorImage = css`
-  width: 8.5rem;
-  height: 8.5rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 4rem;
   box-shadow: white 0px 0px 0px 3px, rgb(0, 0, 0, 0.2) 0px 3px 8px 3px;
   border-radius: 50%;

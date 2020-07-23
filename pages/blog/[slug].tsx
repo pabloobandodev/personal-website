@@ -21,13 +21,6 @@ const title = css`
     font-size: 1.1em;
   }
 `
-const imgTitle = css`
-  width: auto;
-  height: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-`
 const article = (theme: Theme) => css`
   ${text};
   & img {
@@ -38,6 +31,17 @@ const article = (theme: Theme) => css`
   a {
     text-decoration: none;
     color: ${theme.primary};
+  }
+`
+const imgTitle = css`
+  width: auto;
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
   }
 `
 
@@ -60,15 +64,11 @@ const PostPage: React.FC<{ post: Post }> = ({ post }) => {
           <img
             src={post?.coverImage.responsiveImage.src}
             alt={`Post Image of ${title}`}
-            css={css`
-              ${imgTitle};
-              max-height: 300px;
-            `}
+            css={imgTitle}
           />
         )}
         <article css={article(theme)}>
           <h1 css={title}>{post?.title}</h1>
-
           <div css={text} dangerouslySetInnerHTML={{ __html: post?.content }} />
         </article>
       </main>

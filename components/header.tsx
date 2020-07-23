@@ -28,11 +28,11 @@ const button = css`
   outline: none;
 `
 const themeIcon = css`
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   @media (max-width: 768px) {
-    width: 1rem;
-    height: 1rem;
+    width: 2rem;
+    height: 2rem;
   }
 `
 
