@@ -17,8 +17,8 @@ const containerOptions = css`
   }
 `
 const option = css`
-  width: 24rem;
-  height: 18rem;
+  width: 48%;
+  height: auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   text-align: center;
   padding: 1rem;
@@ -27,10 +27,15 @@ const option = css`
     transition-duration: 0.3s;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.24);
   }
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+    width: 100%;
+  }
 `
 const iconIllustration = css`
   height: 12rem;
   width: auto;
+  max-width: 98%;
 `
 
 const SourceCode: React.FC = () => {
@@ -84,7 +89,7 @@ const SourceCode: React.FC = () => {
         </section>
       </main>
       <img
-        src='/images/spaceShip.png'
+        src='/images/spaceship.png'
         css={iconSpaceShift}
         alt='SpaceShip icon'
       />

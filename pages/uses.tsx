@@ -8,7 +8,7 @@ import { main, text, link } from 'pages'
 export const iconSpaceShift = css`
   height: 6rem;
   width: auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -190,7 +190,7 @@ const Uses: React.FC = () => {
           </ul>
         </section>
         <img
-          src='/images/spaceShip.png'
+          src='/images/spaceship.png'
           css={iconSpaceShift}
           alt='SpaceShip icon'
         />

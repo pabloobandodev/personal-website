@@ -12,6 +12,9 @@ export const iconGlove = css`
   height: 8rem;
   width: auto;
   margin-bottom: 1.5rem;
+  @media (max-width: 768px) {
+    height: 6rem;
+  }
 `
 
 const Contact: React.FC = () => {

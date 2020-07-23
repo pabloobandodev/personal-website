@@ -18,8 +18,8 @@ const logo = css`
   width: 9rem;
   height: 9rem;
   @media (max-width: 768px) {
-    width: 6rem;
-    height: 6rem;
+    width: 6.5rem;
+    height: 6.5rem;
   }
 `
 const button = css`
