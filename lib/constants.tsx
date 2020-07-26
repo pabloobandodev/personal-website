@@ -6,7 +6,7 @@ export const SITE_URL = 'https://pabloobando.dev/'
 export const author: Author = {
   name: 'Pablo',
   description: `A software engineer who enjoys programming and good beers 🍻`,
-  hobbies: ['💚 Open Sourcer', '👩‍🔬 Science', '📜 History', '🦄 Chill Out'],
+  hobbies: ['💚 Open Source', '👩‍🔬 Science', '📜 History', '🦄 Chill Out'],
   socialMedia: [
     {
       name: 'Twitter',

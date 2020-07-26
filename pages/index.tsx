@@ -89,7 +89,7 @@ const Home: React.FC = () => {
           />
           <h1 css={text}>Hi there, I'm {author?.name} 👋</h1>
           <p css={text}>{author?.description}</p>
-          <p>I make applications web and mobiles 👨‍💻</p>
+          <p>I make web and mobile applications 👨‍💻</p>
           <h3>Another cool things that I enjoy</h3>
           <ul css={list}>
             {author?.hobbies?.map((hobby) => (
@@ -100,7 +100,7 @@ const Home: React.FC = () => {
             <Link href='/uses'>
               <a css={link(theme)}>Here</a>
             </Link>{' '}
-            are some of things I use daily.
+            are some of things that I use on a daily basis.
           </p>
           <p css={text}>
             You can check out my blog ✍️ , or contact me to talk about your
