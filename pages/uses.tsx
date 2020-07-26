@@ -117,14 +117,14 @@ const Uses: React.FC = () => {
             </li>
             <li>
               Sometimes I use{' '}
-              <a href='https://yarnpkg.com/' target='_blank' css={link}>
+              <a href='https://brew.sh/' target='_blank' css={link}>
                 Homebrew
               </a>{' '}
               to install missing packages on OSX.
             </li>
             <li>
               I use{' '}
-              <a href='https://brew.sh/' target='_blank' css={link}>
+              <a href='https://yarnpkg.com/' target='_blank' css={link}>
                 yarn
               </a>{' '}
               as my package manager.
