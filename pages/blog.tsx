@@ -4,27 +4,16 @@ import { GetStaticProps } from 'next'
 import Link from 'next/link'
 import { useTheme } from 'emotion-theming'
 import Page from 'components/page'
-import Footer from 'components/footer'
 import Date from 'components/date'
 import { main, text } from 'pages'
 import { Post, Theme } from 'lib/types'
 import { getAllPosts } from 'lib/datocms'
-
-const loading = keyframes`
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 100%;
-  }
-`
 
 const list = css`
   list-style: none;
   padding: 0;
   margin: 0;
 `
-
 const listElement = (theme: Theme) => css`
   margin: 0 0 4rem;
   .separator {
@@ -39,7 +28,6 @@ const listElement = (theme: Theme) => css`
     );
   }
 `
-
 const titleElement = (theme: Theme) => css`
   line-height: 1.25;
   margin-bottom: 0.75rem;
@@ -75,7 +63,6 @@ const Blog: React.FC<{ allPosts: Post[] }> = ({ allPosts }) => {
           </ul>
         </section>
       </main>
-      <Footer />
     </Page>
   )
 }

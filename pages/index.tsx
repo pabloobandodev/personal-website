@@ -1,9 +1,7 @@
 /** @jsx jsx */
 import { css, jsx, keyframes } from '@emotion/core'
 import Link from 'next/link'
-import { FaGift } from 'react-icons/fa'
 import Page from 'components/page'
-import Footer from 'components/footer'
 import { useTheme } from 'emotion-theming'
 import { Theme } from 'lib/types'
 import { author } from 'lib/constants'
@@ -124,7 +122,6 @@ const Home: React.FC = () => {
           </Link>
         </section>
       </main>
-      <Footer />
     </Page>
   )
 }

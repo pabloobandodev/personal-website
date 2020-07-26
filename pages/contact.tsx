@@ -2,7 +2,6 @@
 import { jsx, css } from '@emotion/core'
 import React from 'react'
 import Page from 'components/page'
-import Footer from 'components/footer'
 import { main, text, list, link } from 'pages'
 import { useTheme } from 'emotion-theming'
 import { Theme } from 'lib/types'
@@ -43,7 +42,6 @@ const Contact: React.FC = () => {
           </ul>
         </section>
       </main>
-      <Footer />
     </Page>
   )
 }

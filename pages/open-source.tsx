@@ -3,7 +3,6 @@ import { jsx, css } from '@emotion/core'
 import React from 'react'
 import Link from 'next/link'
 import Page from 'components/page'
-import Footer from 'components/footer'
 import { main, text, link } from 'pages'
 import { iconSpaceShift } from 'pages/uses'
 
@@ -93,7 +92,6 @@ const SourceCode: React.FC = () => {
         css={iconSpaceShift}
         alt='SpaceShip icon'
       />
-      <Footer />
     </Page>
   )
 }

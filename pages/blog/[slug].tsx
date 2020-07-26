@@ -3,7 +3,6 @@ import { jsx, css } from '@emotion/core'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import Head from 'next/head'
 import Page from 'components/page'
-import Footer from 'components/footer'
 import { useTheme } from 'emotion-theming'
 import { Post, Theme } from 'lib/types'
 import { main, text } from 'pages'
@@ -72,7 +71,6 @@ const PostPage: React.FC<{ post: Post }> = ({ post }) => {
           <div css={text} dangerouslySetInnerHTML={{ __html: post?.content }} />
         </article>
       </main>
-      <Footer />
     </Page>
   )
 }

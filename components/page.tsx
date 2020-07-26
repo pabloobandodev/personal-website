@@ -7,6 +7,7 @@ import { Theme } from 'lib/types'
 import { useTheme } from 'emotion-theming'
 import Meta from 'components/meta'
 import Header from 'components/header'
+import Footer from 'components/footer'
 
 Router.events.on('routeChangeStart', () => NProgress.start())
 Router.events.on('routeChangeComplete', () => NProgress.done())
@@ -49,6 +50,7 @@ const Page: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <div css={innerContainer}>
         <Header />
         {children}
+        <Footer />
       </div>
     </div>
   )
