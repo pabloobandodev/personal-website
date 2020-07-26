@@ -30,6 +30,7 @@ const button = css`
 const themeIcon = css`
   width: 2.5rem;
   height: 2.5rem;
+  cursor: pointer;
   @media (max-width: 768px) {
     width: 2rem;
     height: 2rem;
