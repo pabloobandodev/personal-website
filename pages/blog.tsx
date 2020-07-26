@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css, keyframes } from '@emotion/core'
+import { jsx, css } from '@emotion/core'
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
 import { useTheme } from 'emotion-theming'
@@ -14,7 +14,7 @@ const list = css`
   padding: 0;
   margin: 0;
 `
-const listElement = (theme: Theme) => css`
+const listElement = css`
   margin: 0 0 4rem;
   .separator {
     height: 5px;
@@ -47,7 +47,7 @@ const Blog: React.FC<{ allPosts: Post[] }> = ({ allPosts }) => {
         <section>
           <ul css={list}>
             {allPosts?.map(({ title, excerpt, date, slug, coverImage }) => (
-              <li css={listElement(theme)} key={slug}>
+              <li css={listElement} key={slug}>
                 <Link href='/blog/[slug]' as={`/blog/${slug}`}>
                   <a css={titleElement(theme)}>
                     <h2>{title}</h2>
@@ -67,7 +67,7 @@ const Blog: React.FC<{ allPosts: Post[] }> = ({ allPosts }) => {
   )
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
   const allPosts = await getAllPosts()
   return {
     props: {
