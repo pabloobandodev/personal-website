@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
       >
         <section>
           <h1>Let's talk about coding and business</h1>
-          <h3 css={text}>You can found me in</h3>
+          <h3 css={text}>You can find me in</h3>
           <img src='/images/glove.png' css={iconGlove} alt='Glove icon' />
 
           <ul css={list}>
