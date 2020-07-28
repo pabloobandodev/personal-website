@@ -17,6 +17,7 @@ const hashtag = css`
 `
 
 const containerIcons = css`
+  background-color: red;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -33,7 +34,6 @@ const iconStyle = (theme: Theme) => css`
   }
   @media (max-width: 768px) {
     font-size: 1.2rem;
-    margin-left: 1rem;
   }
 `
 
