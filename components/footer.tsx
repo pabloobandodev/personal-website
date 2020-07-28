@@ -17,7 +17,6 @@ const hashtag = css`
 `
 
 const containerIcons = css`
-  background-color: red;
   display: flex;
   flex-direction: row;
   align-items: center;
